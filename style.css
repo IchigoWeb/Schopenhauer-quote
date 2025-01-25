@@ -1,0 +1,91 @@
+
+html {
+    background: #fff;;
+}
+body {
+    background: rgb(230,232,230);
+    background: linear-gradient(180deg, rgba(230,232,230,1) 40%, rgba(255,255,255,1) 100%);
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#container {
+    text-align: center;
+    width:80%;
+    margin: 0 auto;
+}
+#container img {
+    max-width:100%;
+    display: block;
+}
+h1 {
+    color: #156064;
+    font-size: 5vw;
+    line-height: 3.6vw;
+    margin: 40px 20px 20px;
+}
+p {
+    color: #30011E;
+    font-size: 1.5vw;
+    margin: 0 20px 30px;
+}
+
+/* FONTS */
+.italianno-regular {
+    font-family: "Italianno", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.unna-regular {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+/* MEDIA QUERIES */
+@media screen and (max-width: 720px) {
+    #container {
+        width:100%;
+    }
+    h1 {
+        font-size: 9vw;
+        line-height: 7vw;
+        margin: 80px 20px 20px;
+    }
+    p {
+        font-size: 3vw;
+    }
+
+}  
+
+/* ANIMATIONS */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-130%) scale(1.5);
+      }
+    30% {
+      transform: translateY(-130%) scale(1.5);
+    }
+  
+    100% {
+      transform: translateY(0) scale(1);
+    }
+}
+.animated-slide-in {
+    animation: slideInFromTop 1s ease-in-out;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* fade-in page onload*/
+.fade-in-animation {
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
